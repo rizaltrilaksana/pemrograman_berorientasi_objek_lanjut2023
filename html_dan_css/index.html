@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="judul">FORM REGISTRASI</h1>
+    <p id="deskripsi">Isilah form di bawah ini dengan lengkap.</p>
+
+    <form id="form-registrasi">
+        <div>
+            <label for="nama" id="label-untuk-nama">Nama</label><br>
+            <input class="input-elm" type="text" id="nama" placeholder="Nama Lengkap" required>
+        </div>
+        <div>
+            <label for="tanggal" id="label-tgl-lahir">Tanggal Lahir</label><br>
+            <input class="input-elm" type="date" id="tanggal" placeholder="" required>
+        </div>
+        <div>
+            <label for="email" id="label-email">Email</label><br>
+            <input class="input-elm" type="email" id="email" placeholder="Email Id" required>
+        </div>
+        <div>
+            <label for="password" id="label-password">Password</label><br>
+            <input class="input-elm" type="password" id="password" placeholder="Password" required>
+        </div>
+        <div>
+            <label for="tahun" id="label-tahun">Tahun Angkatan</label><br>
+            <input class="input-elm" type="number" id="tahun" min="2000" max="2020" required>
+        </div>
+        <div>
+            <label for="agama" id="label-agama">Agama</label><br>
+            <select class="input-elm" id="agama">
+                <option value="islam">Islam</option>
+                <option value="katholik">Katholik</option>
+                <option value="protestan">Protestan</option>
+                <option value="hinidu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </div>
+        <div>
+            <div>Jenis Kelamin</div>
+            <ul>
+                <li class="list-item"><input class="input-elm input-radio" type="radio" value="1" name="gender" id="radio-1"><label>Laki-laki</label></li>
+                <li class="list-item"><input class="input-elm input-radio" type="radio" value="2" name="gender" id="radio-2"><label>Perempuan</label></li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Hobi</div>
+            <ul>
+                <li class="list-item"><input class="input-elm input-checkbox" type="checkbox" value="1" name="olahraga" id="checkbox-1"><label>Olahraga</label></li>
+                <li class="list-item"><input class="input-elm input-checkbox" type="checkbox" value="2" name="musik" id="checkbox-2"><label>Musik</label></li>
+                <li class="list-item"><input class="input-elm input-checkbox" type="checkbox" value="2" name="lukis" id="checkbox-3"><label>Lukis</label></li>
+                <li class="list-item"><input class="input-elm input-checkbox" type="checkbox" value="2" name="konten creator" id="checkbox-4"><label>Konten Creator</label></li>
+                <li class="list-item"><input class="input-elm input-checkbox" type="checkbox" value="2" name="desain" id="checkbox-5"><label>Desain</label></li>
+            </ul>
+        </div>
+
+        <div>
+            <label for="keterangan" id="label-keterangan">Keterangan</label><br>
+            <textarea class="textarea-elm" id="keterangan"></textarea>
+        </div>
+        <button class="button-elm" type="submit" id="submit">Simpan</button>
+    </form>
+</body>
+</html>
